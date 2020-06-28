@@ -1,0 +1,150 @@
+:root{
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body{
+  margin: 0;
+  background-color: var(--light-gray);
+  font-family: 'Karla', sans-serif;
+
+}
+
+h1{
+  margin: 0;
+  color: var(--cyan);
+}
+
+.wrapper{
+  width: 60%;
+  margin: 50px auto auto;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #565656;
+}
+
+.top-container{
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.top-container p{
+  color: var(--grayish-blue);
+  line-height: 2rem;
+}
+
+.top-container p span{
+  color: var(--bright-yellow);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.bottom-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left{
+  width: 50%;
+  background-color: var(--cyan);
+  min-height: 200px;
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 0 0 0 12px;
+}
+
+.left h3{
+  margin: 0;
+}
+
+.left p{
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+  color: var(--light-gray)
+}
+
+.left p .amount{
+  font-size: 2rem;
+  color: #fff;
+}
+
+.left p .period{
+  padding-left: 10px;
+  font-weight: 200;
+}
+
+.left .button{
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--bright-yellow);
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px 10px #565656;
+}
+
+.left .button:hover{
+  transform: translateX(-2px);
+  transform: translateY(2px);
+
+}
+
+.right{
+  width: 50%;
+  background-color: var(--grayish-blue);
+  color: #fff;
+  border-radius: 0 0 12px 0;
+  min-height: 200px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.right h3{
+  margin: 0;
+}
+
+.right p{
+  line-height: 1.5rem;
+  color: var(--light-gray);
+}
+
+footer{
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .wrapper{
+    width: 90%;
+  }
+
+  .top-container h1{
+    font-size: 1.2rem;
+  }
+
+  .top-container p{
+    margin-top: 1rem;
+  }
+
+  .bottom-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left{
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .right{
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+  }
+}

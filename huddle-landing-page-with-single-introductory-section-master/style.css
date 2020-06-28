@@ -1,0 +1,152 @@
+:root{
+  --Violet: hsl(257, 40%, 49%);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+body{
+  background: url('images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-color: var(--Violet);
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+.container{
+
+}
+
+.logo{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.logo img{
+  height: 40px;
+}
+
+.wrapper{
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+  width: 90%;
+}
+
+.image{
+  width: 55%;
+}
+
+.image img{
+  width: 100%;
+}
+
+.content{
+  width: 50%;
+  padding: 0 60px;
+}
+
+.content h1{
+  margin-top: 50px;
+  line-height: 3rem;
+}
+
+.content p{
+  line-height: 1.5rem;
+}
+
+.content button{
+  margin-top: 50px;
+  padding: 25px 15px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  color: var(--Violet);
+  box-shadow: 0 2px 10px rgba(0, 0, 0);
+}
+
+.content button:hover{
+  cursor: pointer;
+  transform: translateX(1px);
+  transform: translateY(1px);
+}
+
+ul{
+  text-align: right;
+  margin: 0 auto;
+  width: 90%;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+ul li a .fab{
+  margin-right: 10px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 40px;
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width:375px){
+  body{
+    background: url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-color: var(--Violet);
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .image{
+    width: 100%;
+  }
+
+  .content{
+    text-align: center;
+    width: 100%;
+    padding:0;
+  }
+
+  ul{
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+.attribution {
+  background: #aaa;
+  margin: 30px auto 0;
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
