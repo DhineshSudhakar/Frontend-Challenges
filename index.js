@@ -32,3 +32,7 @@ function formatProjectName(name){
   .map(word => word[0].toUpperCase() + word.slice(1))
   .join(' ');
 };
+
+// function example(){
+//
+// }
